@@ -279,6 +279,11 @@ header .mobile {
     margin: 1.5rem 1rem 2rem 1rem;
     height: 4rem;
   }
+  .content span {
+    height: 4rem;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+  }
 }
 
 /* middle section*/
