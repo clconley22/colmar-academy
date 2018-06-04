@@ -32,14 +32,14 @@ h1{
 
 h2 {
   font-family: "julius-sans-one", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.rem;
   color: #25274D;
 }
 
 h3,
 a {
   font-family: "tajawal", sans-serif;
-  font-size: 1.5rem;
+  font-size: .75rem;
   color: #25274D;
 }
 
@@ -105,6 +105,26 @@ header .desktop span {
 
 header .mobile {
   display: none;
+}
+
+@media only screen and (max-device-width: 640px) {
+  header .mobile {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  header .mobile img {
+   justify-content: space-around;
+  }
+
+  header .mobile {
+    padding-right: 2rem;
+  }
+
+  header .desktop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -176,8 +196,7 @@ header .mobile {
   background-color: #25274D;
 }
 
-@media only screen and (max-width: 640px) {
-
+@media only screen and (max-device-width: 640px) {
   .start-here img{
     width: 100%;
     padding: 0;
@@ -205,6 +224,36 @@ header .mobile {
     margin: 1.5rem 1rem 2rem 1rem;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  .start-here img{
+    width: 100%;
+    padding: 0;
+  }
+  .container-start .start-here {
+    padding: 4rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .start-here .content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .start-here .content h1 {
+    padding: 1rem;
+    font-size: 1.75rem
+  }
+
+  .start-here .content p {
+    padding: 1rem;
+    font-size: 1.25rem
+  }
+  .start-here-btn {
+    margin: 1.5rem 1rem 2rem 1rem;
+  }
+}
+
 /* middle section*/
 
 .container-middle {
@@ -230,16 +279,6 @@ header .mobile {
   padding-left: 1.5rem;
 }
 
-@media only screen and (max-width: 1000px;){
-
-  .content h2 {
-    font-size: 1rem;
-  }
-
-  .content h3 {
-    font-size: .5rem;
-  }
-}
 
 .middle-left p {
   padding-top: 1.5rem;
@@ -297,6 +336,46 @@ a {
   text-decoration: none;
   padding-top: .5rem;
 }
+@media only screen and (max-device-width: 640px) {
+  .middle-left{
+    display: none;
+  }
+
+  .middle-right .mobile {
+    display: flex;
+  }
+
+  .middle-right .desktop {
+    display: none;
+  }
+
+  .container-middle{
+    display: flex;
+  }
+
+  .middle-right {
+    display: block;
+    width: 100%;
+  }
+
+  .orientation,
+  .our-campus,
+  .guest-lecture {
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .middle-right img {
+    width: 90%;
+  }
+
+  .content {
+    align-items: flex-start;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .middle-left{
     display: none;
@@ -382,6 +461,33 @@ a {
 .section-title {
   padding-top: 2rem;
   text-align: center;
+}
+
+@media only screen and (max-device-width: 640px) {
+  .course img,
+  .course h3,
+  .course h4 {
+    display: none;
+  }
+  .course h2 {
+    background-color: WhiteSmoke;
+    padding: 1rem 0rem 1.5rem 1rem;
+    font-size: bold;
+  }
+  .container-courses {
+    background-color: white;
+  }
+
+  .course {
+    display: block;
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  .courses {
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 0rem;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -473,6 +579,20 @@ a {
   padding-bottom: .5rem;
 }
 
+@media only screen and (max-device-width: 640px) {
+  .left .content {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .left .content {
     display: none;
@@ -511,6 +631,13 @@ a {
   color: #25274D;
   font-family: "tajawal", sans-serif;
   font-size: 1rem;
+}
+
+@media only screen and (max-device-width: 640px) {
+  .footer .terms,
+  .footer .privacy {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 640px) {
