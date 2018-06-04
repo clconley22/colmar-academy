@@ -116,6 +116,7 @@ header .mobile {
 
   header .mobile img {
    justify-content: space-around;
+   height: 4rem;
   }
 
   header .mobile {
@@ -124,6 +125,17 @@ header .mobile {
 
   header .desktop {
     display: none;
+  }
+  header {
+    height: 8rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .logo img {
+    height: 4rem;
   }
 }
 
@@ -144,6 +156,13 @@ header .mobile {
 
   header .desktop {
     display: none;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+  .logo img {
+    height: 4rem;
   }
 }
  /* Start Here section */
@@ -213,15 +232,22 @@ header .mobile {
 
   .start-here .content h1 {
     padding: 1rem;
-    font-size: 1.75rem
+    font-size: 2rem
   }
 
   .start-here .content p {
     padding: 1rem;
-    font-size: 1.25rem
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .start-here-btn {
     margin: 1.5rem 1rem 2rem 1rem;
+  }
+
+  .content span {
+    height: 4rem;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -242,15 +268,16 @@ header .mobile {
 
   .start-here .content h1 {
     padding: 1rem;
-    font-size: 1.75rem
+    font-size: 2rem
   }
 
   .start-here .content p {
     padding: 1rem;
-    font-size: 1.25rem
+    font-size: 1.5rem
   }
   .start-here-btn {
     margin: 1.5rem 1rem 2rem 1rem;
+    height: 4rem;
   }
 }
 
@@ -304,7 +331,6 @@ header .mobile {
 .our-campus,
 .guest-lecture {
   display: flex;
-  height: 33%;
 }
 
 .middle-right img {
@@ -374,6 +400,13 @@ a {
   .content {
     align-items: flex-start;
   }
+  .middle-right .content h2 {
+    font-size: 2rem;
+  }
+  .middle-right .content h3,
+  .middle-right .content a {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -413,6 +446,18 @@ a {
 
   .content {
     align-items: flex-start;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+  .content p {
+    font-size: 1.5rem;
+  }
+
+  .middle-right .content h3,
+  .middle-right .content a {
+    font-size: 1.5rem;
   }
 }
 /*course section*/
@@ -470,9 +515,10 @@ a {
     display: none;
   }
   .course h2 {
-    background-color: WhiteSmoke;
     padding: 1rem 0rem 1.5rem 1rem;
     font-size: bold;
+    font-size: 3rem;
+    text-align: center;
   }
   .container-courses {
     background-color: white;
@@ -481,7 +527,9 @@ a {
   .course {
     display: block;
     width: 100%;
-    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    height: 5rem;
+    background-color: WhiteSmoke;
   }
 
   .courses {
@@ -497,9 +545,10 @@ a {
     display: none;
   }
   .course h2 {
-    background-color: WhiteSmoke;
     padding: 1rem 0rem 1.5rem 1rem;
     font-size: bold;
+    font-size: 3rem;
+    text-align: center;
   }
   .container-courses {
     background-color: white;
@@ -508,7 +557,9 @@ a {
   .course {
     display: block;
     width: 100%;
-    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    height: 5rem;
+    background-color: WhiteSmoke;
   }
 
   .courses {
@@ -591,6 +642,15 @@ a {
   .left {
     width: 100%;
   }
+
+  .title-thesis {
+    font-size: 3rem;
+  }
+
+  .thesis video {
+    width: 100%;
+    margin: auto 0;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -605,6 +665,15 @@ a {
   .left {
     width: 100%;
   }
+
+  .title-thesis {
+    font-size: 3rem;
+  }
+  .thesis video {
+    width: 100%;
+    margin: auto 0;
+  }
+
 }
 
 /*footer*/
