@@ -14,25 +14,49 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-html {
+html,
+body {
   font-size: 16px;
+  height:100%;
+  padding:0;
+  margin:0;
 }
 
 
 h1{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #25274D;
   font-family: "julius-sans-one", sans-serif;
 }
 
+h2 {
+  font-family: "julius-sans-one", sans-serif;
+  font-size: 1.75rem;
+  color: #25274D;
+}
+
+h3,
+a {
+  font-family: "tajawal", sans-serif;
+  font-size: 1.5rem;
+  color: #25274D;
+}
+
+h4 {
+  font-family: "tajawal", sans-serif;
+  font-size: 1rem;
+  color: #25274D;
+}
+
 p {
   color: #25274D;
   font-family: "tajawal", sans-serif;
+  font-size: 1.5
 }
 /* header */
 
-header .container {
+header {
   display: flex;
   justify-content: space-between;
   padding-left: 1.5rem;
@@ -42,6 +66,7 @@ header .container {
   border-bottom: 1px solid #25274D;
   position: fixed;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .logo {
@@ -52,6 +77,11 @@ header .container {
 
 .title {
   font-family: "julius-sans-one", sans-serif;
+}
+
+.container-header {
+  width: 100%;
+  overflow: hidden;
 }
 
 .title span:first-child {
@@ -77,7 +107,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
   header .mobile {
     display: flex;
     width: 50%;
@@ -88,18 +118,26 @@ header .mobile {
    justify-content: space-around;
   }
 
+  header .mobile {
+    padding-right: 2rem;
+  }
+
   header .desktop {
     display: none;
   }
 }
  /* Start Here section */
 
-.container .start-here {
+ .container-start {
+   overflow: hidden;
+ }
+
+.start-here {
   display: flex;
-  padding: 6rem 1.5rem 2rem 1.5rem;
+  padding: 6rem 0rem 2rem 1.5rem;
   background-color: WhiteSmoke;
   align-items: center;
-  width:100%
+  width: 100%;
 }
 
 .start-here img{
@@ -138,12 +176,13 @@ header .mobile {
   background-color: #25274D;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
+
   .start-here img{
     width: 100%;
     padding: 0;
   }
-  .container .start-here {
+  .container-start .start-here {
     padding: 4rem 0rem 0rem 0rem;
     display: flex;
     flex-direction: column;
@@ -168,8 +207,10 @@ header .mobile {
 }
 /* middle section*/
 
-.container {
+.container-middle {
   display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
 .middle-left {
@@ -201,10 +242,6 @@ header .mobile {
   display: none;
 }
 
-.container-middle {
-  display: flex;
-}
-
 .middle-right {
   display: block;
   width: 40%;
@@ -217,7 +254,7 @@ header .mobile {
 .our-campus,
 .guest-lecture {
   display: flex;
-  height: 30%;
+  height: 33%;
 }
 
 .middle-right img {
@@ -230,9 +267,243 @@ header .mobile {
   flex-direction: column;
   justify-content: center;
   width: 65%;
-  align-items: center;
+}
+
+.content {
+  padding-left: 1rem;
 }
 
 .our-campus {
   background-color: WhiteSmoke;
+}
+h2 {
+  padding-bottom: .5rem;
+ }
+
+a {
+  color: #2E9CCA;
+  text-decoration: none;
+  padding-top: .5rem;
+}
+@media only screen and (max-width: 640px) {
+  .middle-left{
+    display: none;
+  }
+
+  .middle-right .mobile {
+    display: flex;
+  }
+
+  .middle-right .desktop {
+    display: none;
+  }
+
+  .container-middle{
+    display: flex;
+  }
+
+  .middle-right {
+    display: block;
+    width: 100%;
+  }
+
+  .orientation,
+  .our-campus,
+  .guest-lecture {
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .middle-right img {
+    width: 90%;
+  }
+
+  .content {
+    align-items: flex-start;
+  }
+}
+/*course section*/
+
+.container-courses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: WhiteSmoke;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 4.5rem 2rem 4.5rem;
+  justify-content: space-between;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.course h2{
+  padding: 1rem 0rem .5rem 1rem
+}
+
+.course h3 {
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+}
+
+.course h4 {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+.section-title {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .course img,
+  .course h3,
+  .course h4 {
+    display: none;
+  }
+  .course h2 {
+    background-color: WhiteSmoke;
+    padding: 1rem 0rem 1.5rem 1rem;
+    font-size: bold;
+  }
+  .container-courses {
+    background-color: white;
+  }
+
+  .course {
+    display: block;
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  .courses {
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 0rem;
+  }
+}
+
+/*thesis*/
+
+.thesis video {
+  width: 95%;
+  margin: 1.5rem;
+}
+
+.title-thesis {
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0rem .5rem 0rem;
+}
+
+.container-thesis {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left;
+}
+
+.right {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  padding-top: 1.5rem;
+}
+
+.right .first {
+  display: flex;
+  background-color: WhiteSmoke;
+}
+
+.right .second {
+  display: flex;
+}
+
+.right img {
+  width: 30%;
+  height: auto;
+  padding: 1rem;
+}
+
+.first .content,
+.second .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left .content {
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.left .content h2 {
+  padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .left .content {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  height: 4rem;
+  border-top: 1px solid #25274D;
+  justify-content: space-between;
+}
+
+.footer .copyright {
+  padding: 1rem 0rem 0rem 1.5rem;
+  color: #25274D;
+  font-family: "tajawal", sans-serif;
+  font-size: 1rem;
+}
+
+.footer .terms,
+.footer .privacy {
+  display: inline-flex;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  color: #25274D;
+  font-family: "tajawal", sans-serif;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .footer .terms,
+  .footer .privacy {
+    display: none;
+  }
 }
