@@ -230,6 +230,17 @@ header .mobile {
   padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 1000px;){
+
+  .content h2 {
+    font-size: 1rem;
+  }
+
+  .content h3 {
+    font-size: .5rem;
+  }
+}
+
 .middle-left p {
   padding-top: 1.5rem;
 }
@@ -259,6 +270,7 @@ header .mobile {
 
 .middle-right img {
   width: 35%;
+  height: 80%;
   padding: 1rem;
 }
 
@@ -441,7 +453,7 @@ a {
 
 .right img {
   width: 30%;
-  height: auto;
+  height: 100%;
   padding: 1rem;
 }
 
