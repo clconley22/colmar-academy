@@ -159,7 +159,7 @@ header .mobile {
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .logo img {
     height: 4rem;
@@ -584,6 +584,7 @@ a {
   font-weight: bold;
   text-align: center;
   padding: 2rem 0rem .5rem 0rem;
+  font-size: 2rem;
 }
 
 .container-thesis {
